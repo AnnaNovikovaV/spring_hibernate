@@ -17,9 +17,9 @@ public class UserDaoImp implements UserDao {
     private static final String GET_USER_BY_CAR_PARAMETERS = """
             Select user
             FROM User user
-             JOIN Car car
-             ON user.car.id = car.id
-             WHERE car.model = :model and car.series = :series
+            JOIN Car car
+            ON user.car.id = car.id
+            WHERE car.model = :model and car.series = :series
             """;
 
     @Override
