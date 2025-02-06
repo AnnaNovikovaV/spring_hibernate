@@ -39,7 +39,7 @@ public class MainApp {
         user2.setCar(new Car("Audi", 3));
         userService.add(user2);
 
-        User audiOwner = userService.getUserByCar("Audi", 3);
+        User audiOwner = userService.getUserByCarParameters("Audi", 3);
         System.out.println(audiOwner);
 
         context.close();
